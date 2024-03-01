@@ -7,6 +7,7 @@
   - Name: IDADIR, Value: <Ruta de instalación del IDA Pro (sin comillas)>
   - En los dos casos dar click a "Set this macro as an environment variable in the build environment"
 
+
 - Dirigirse a Solution Explorer, y en el nombre del proyecto click derecho -> Properties
 - `C/C++ -> Additional Includes Directories` agregar, `$(IDASDK)\include;$(IDADIR)\plugins\hexrays_sdk\include`
 - `C/C++ -> Preprocessor -> Processor definitions`:
@@ -17,3 +18,6 @@
 - `Linker -> All options -> Additional Dependencies` agregar, `ida.lib`
   - Opcional, al usar ventenas: `user32.lib`
 - `Linker -> Command Line -> Additional Options` agregar, `/EXPORT:PLUGIN`
+
+
+- `C/C++ -> General -> SDL checks`, cambiar a `No (/sdl-)`

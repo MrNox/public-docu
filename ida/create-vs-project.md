@@ -1,3 +1,4 @@
+# 1
 - Crear una proyecto escogiendo "Dynamic-Link Library (DLL)"
 - `View -> Other Windows -> Project Manager`, o en la ventana Solution Explorer cambiar la pestaña que se encuentra en la parte inferior Project Manager
 - En el nombre del proyecto (no en los directorios) click derecho -> Add New Project Property Sheet...
@@ -7,6 +8,7 @@
   - Name: IDADIR, Value: <Ruta de instalación del IDA Pro (sin comillas)>
   - En los dos casos dar click a "Set this macro as an environment variable in the build environment"
 
+# 2
 
 - Dirigirse a Solution Explorer, y en el nombre del proyecto click derecho -> Properties
 - `C/C++ -> Additional Includes Directories` agregar, `$(IDASDK)\include;$(IDADIR)\plugins\hexrays_sdk\include`
@@ -19,5 +21,6 @@
   - Opcional, al usar ventenas: `user32.lib`
 - `Linker -> Command Line -> Additional Options` agregar, `/EXPORT:PLUGIN`
 
+# Desactivar para evitar errores
 
 - `C/C++ -> General -> SDL checks`, cambiar a `No (/sdl-)`

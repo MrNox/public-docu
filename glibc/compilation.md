@@ -1,5 +1,5 @@
 ```git clone https://github.com/fr0ster/glibc-all-in-one/```
-`$ ./update_list```
+```$ ./update_list```
 ```$ cat list```
 ```$ cat old_list```
 `$ ./download 2.39-0ubuntu9_amd64` or `./download_old 2.34-0ubuntu3_amd64`
